@@ -1,0 +1,42 @@
+﻿<div id="app">
+    <div id="sidebar" class='active'>
+        <div class="sidebar-wrapper active">
+            <div class="sidebar-header">
+                <img src="assets/images/logo.svg" alt="" srcset="">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="menu">
+
+
+                    <li class='sidebar-title'>Main Menu</li>
+
+
+
+                    <li class="sidebar-item active ">
+                        <a href="index.html" class='sidebar-link'>
+                            <i data-feather="home" width="20"></i>
+                            <span>Dashboard</span>
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li class="sidebar-item  has-sub">      
+                        <a class='sidebar-link'>
+                            @Html.ActionLink("Category", "Index", "Category", null, null)
+                            <i data-feather="triangle" width="20"></i>
+
+                        </a>
+                    </li>
+                    <li class="sidebar-item  has-sub">
+                        <a class='sidebar-link'>
+                            @Html.ActionLink("Post", "Index", "Post", null, null)
+                            <i data-feather="briefcase" width="20"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
